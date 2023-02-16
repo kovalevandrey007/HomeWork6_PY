@@ -13,3 +13,11 @@
 # Примеры/Тесты:
 # lst1 = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
 # <function_name>(lst1, 2, 10) -> [(1, 9), (3, 3), (7, 4), (9, 10), (10, 2), (13, 8), (14, 10), (19, 7)]
+
+lst1 = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
+num1 = int(input())
+num2 = int(input())
+result1 = [idx for idx, el in enumerate(lst1) if num1 <= el <= num2]
+result2 = [el for idx, el in enumerate(lst1) if num1 <= el <= num2]
+result3 = [tuple(zip(result1, result2))]
+print(result3)
